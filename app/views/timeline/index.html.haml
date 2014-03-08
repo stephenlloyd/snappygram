@@ -1,0 +1,7 @@
+- @snaps.each do |snap|
+  %section.row
+    %article.columns.small-offset-3.medium-6.panel.text-center
+      %img{src: snap.image.url(:medium)}
+      %p.panel.callout.radius= snap.description
+      - snap.tag_list.each do |tag|
+        %span.label.secondary.rounded=tag

@@ -1,0 +1,19 @@
+= form_for(@snap) do |f|
+  .row
+    %fieldset.columns.medium-4
+      %legend Upload your Snap!
+      .row
+        .medium-12.columns
+          = f.label :description
+          = f.text_area :description
+      .row
+        .medium-12.columns
+          = f.label :image
+          = f.file_field :image
+      .row
+        .medium-12.columns
+          = f.label :tag_list
+          = f.text_field :tag_list
+      .row
+        .medium-12.columns
+          = f.submit 'Upload'
