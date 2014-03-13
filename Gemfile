@@ -14,6 +14,11 @@ gem "paperclip", "~> 4.1"
 gem 'acts-as-taggable-on'
 gem 'foundation-rails'
 gem 'pusher'
+gem 'markdown-rails'
+
+gem 'omniauth-facebook'
+gem 'devise'
+
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'

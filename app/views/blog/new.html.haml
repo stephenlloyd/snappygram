@@ -1,4 +1,8 @@
 %h1 Hello
+
 .row
   .medium-6.columns
-    %textarea
+    %textarea#editor{:'ng-model' => 'post'}
+  .medium-6.columns#output     
+    :markdown
+      

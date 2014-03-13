@@ -16,6 +16,12 @@
 //= require foundation
 //= require turbolinks
 //= require handlebars
+//= require showdown
+//= require angular
+//= require sanitize
+//= require markdown
 //= require_tree .
+
+angular.module('snap', ['ngSanitize', 'btford.markdown'])
 
 $(function(){ $(document).foundation(); });

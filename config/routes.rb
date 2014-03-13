@@ -1,8 +1,12 @@
 Snappygram::Application.routes.draw do
   get "blog/new"
+
   root "timeline#index"
   get "upload" => "uploads#prepare_upload"
   post "upload" => "uploads#upload", as: :snaps
+
+  devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
+
 
 
   # The priority is based upon order of creation: first created -> highest priority.
